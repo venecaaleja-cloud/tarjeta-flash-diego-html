@@ -1,0 +1,131 @@
+/* Reseteo básico */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-contenedor {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Barra de progreso */
+.barra-fondo {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 24px;
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.barra-progreso {
+    background-color: #b0b0b0;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.texto-progreso {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* La Tarjeta */
+.tarjeta {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-tarjeta {
+    flex-grow: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido-tarjeta h2 {
+    font-size: 16px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.contenido-tarjeta p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Botones */
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #e0e0e0;
+}
+
+button:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.btn-voltear {
+    color: #007bff;
+}
